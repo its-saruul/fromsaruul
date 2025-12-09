@@ -77,7 +77,7 @@ export const generateComfortMessage = async (mood: MoodType): Promise<GeneratedM
     The letter should acknowledge her feelings warmly, make a small gentle joke to lighten the mood, and provide specific comfort or hype suited for ${mood}.`;
 
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-flash',
+      model: 'gemini-1.5-flash',
       contents: prompt,
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
